@@ -9,16 +9,18 @@ set(CMAKE_CXX_STANDARD 20)
 
 set(SOURCES
     src/window.cpp
-    src/glad/glad.c
     src/input/input.h
     src/window/init_window.h
 )
 
-add_executable(window ${SOURCES})
+add_executable(window 
+    ${SOURCES}
+    $ENV{GLAD_PATH}/src/glad.c
+)
 
 target_include_directories(window PRIVATE 
 	$ENV{GLFW_INCLUDE}
-	$ENV{GLAD_INCLUDE}
+    $ENV{GLAD_PATH}/include
 )
 
 target_link_libraries(window PRIVATE
