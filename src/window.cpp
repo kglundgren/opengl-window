@@ -9,8 +9,8 @@
 #include <gl/GL.h>
 #include <stdio.h>
 
-#include "window/init_window.h"
-#include "input/input.h"
+#include "window/init_window.hpp"
+#include "input/input.hpp"
 
 int main (int argc, char *argv[])
 {

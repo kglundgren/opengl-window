@@ -9,8 +9,8 @@ set(CMAKE_CXX_STANDARD 20)
 
 set(SOURCES
     src/window.cpp
-    src/input/input.h
-    src/window/init_window.h
+    src/input/input.hpp
+    src/window/init_window.hpp
 )
 
 add_executable(window 
